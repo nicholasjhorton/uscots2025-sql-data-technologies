@@ -10,7 +10,13 @@ See https://beanumber.github.io/abdwr3e/12-large.html and https://mdsr-book.gith
 
 See https://hardin47.netlify.app/courses/sds261-sql/ for an accessible overview of SQL and databases.
 
+Timing of CSV vs. parquet: https://posit.co/blog/speed-up-data-analytics-with-parquet-files/
 
-https://proback.github.io/264_fall_2024/
 
-https://proback.github.io/264_fall_2024/16_SQL_exercises.html
+Paul Roback materials (top level): https://proback.github.io/264_fall_2024/
+
+Paul Roback materials (exercises): https://proback.github.io/264_fall_2024/16_SQL_exercises.html
+
+Public facing SQL database (auditory files): 
+
+Last updated 2025-07-08
