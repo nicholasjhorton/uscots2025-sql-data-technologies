@@ -6,8 +6,6 @@ This is the `README.md` file for the public GitHub repo to accompany the breakou
 - B1B: "Leveraging data technologies to model bigger datasets"
 - Friday, July 18th, 9:45 am – 11:00 am CT
 
-## Abstract
-
 The American Statistical Association's (ASA) Data Expo 2025 made more than 210 million flights from 1987-2024 accessible for analysis. This breakout session introduces participants to essential data technologies—SQL (structured query language), DuckDB, and Parquet files—through hands-on analysis of this airline delay data scaffolded using reproducible analysis tools (Quarto).
 
 Designed for educators teaching introductory and intermediate statistics and data science courses, the session demonstrates how modern tools streamline data exploration, enable efficient data handling, and facilitate modeling while fostering engaging, real-world learning experiences for students. Participants will gain practical skills to simplify and scaffold processing large datasets using SQL and DuckDB for in-memory data analysis and modeling. The session also highlights the advantages of Parquet files for efficient data storage and retrieval.
@@ -17,7 +15,7 @@ Intended Audience: Educators in statistics or related fields, particularly those
 Prerequisites: Prior experience using RStudio. Familiarity with RMarkdown or Quarto highly desirable. Recent (2024 or later) versions of RStudio and R and installation of the `tidyverse` and `duckdb` packages.
 
 
-## Goals:
+Goals:
 
 1. Understand the fundamentals of Quarto, SQL, DuckDB, and Parquet file formats.
 2. Apply these technologies to wrangle, analyze, and model large airline flight delay datasets.
