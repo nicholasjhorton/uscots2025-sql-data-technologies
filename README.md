@@ -40,8 +40,8 @@ Prerequisites: Prior experience using RStudio. Familiarity with RMarkdown or Qua
 - Minilecture 2: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/mini-lecture2.pdf
 - Minilecture 3: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/mini-lecture3.pdf
 - Activity 1 (downloading a subset of the airlines data): https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/1_download_data.qmd
-- Activity 2 (accessing the airlines data using SQL): https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/2-explore-sql.qmd
-- Activity 3 (accessing the airlines data using dplyr): https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/3-explore-dplyr.qmd
+- Activity 2 (accessing the airlines data using SQL): https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/2_explore_sql.qmd
+- Activity 3 (accessing the airlines data using dplyr): https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/3_explore_dplyr.qmd
 - Setting up a SQL server: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/sql-server-instructions.pdf
 
 
