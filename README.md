@@ -57,6 +57,6 @@ Goals:
 
 Last updated 2025-07-11
 
-<img src="select-stmt.gif" alt="drawing" width="400"/>
+<img src="select-stmt.gif" alt="drawing" width="410"/>
 
 
