@@ -8,7 +8,9 @@ This is the `README.md` file for the public GitHub repo to accompany breakout se
 
 ## Abstract
 
-The American Statistical Association's (ASA) Data Expo 2025 made more than 210 million flights from 1987-2024 accessible for analysis. This breakout session introduces participants to essential data technologies—SQL, DuckDB, and Parquet files—through hands-on analysis of this airline delay data scaffolded using reproducible analysis tools (Quarto). Designed for educators teaching introductory and intermediate statistics and data science courses, the session demonstrates how modern tools streamline data exploration, enable efficient data handling, and facilitate modeling while fostering engaging, real-world learning experiences for students. Participants will gain practical skills to simplify and scaffold processing large datasets using SQL and DuckDB for in-memory data analysis and modeling. The session also highlights the advantages of Parquet files for efficient data storage and retrieval.
+The American Statistical Association's (ASA) Data Expo 2025 made more than 210 million flights from 1987-2024 accessible for analysis. This breakout session introduces participants to essential data technologies—SQL, DuckDB, and Parquet files—through hands-on analysis of this airline delay data scaffolded using reproducible analysis tools (Quarto).
+
+Designed for educators teaching introductory and intermediate statistics and data science courses, the session demonstrates how modern tools streamline data exploration, enable efficient data handling, and facilitate modeling while fostering engaging, real-world learning experiences for students. Participants will gain practical skills to simplify and scaffold processing large datasets using SQL and DuckDB for in-memory data analysis and modeling. The session also highlights the advantages of Parquet files for efficient data storage and retrieval.
 
 Intended Audience: Educators in statistics or related fields, particularly those teaching introductory-level and intermediate-level courses, with an interest in incorporating modern data technologies into their curriculum.
 
@@ -43,6 +45,6 @@ Prerequisites: Prior experience using RStudio. Familiarity with RMarkdown or Qua
 - Public facing SQL database (auditory files): https://www.science.smith.edu/wai-database
 - SQL server setup instructions: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/sql-server-instructions.pdf, https://mdsr-book.github.io/mdsr3e/16-sqlII.html, and https://mdsr-book.github.io/mdsr3e/F-dbsetup.html
 
-[Helpful guidance from SQLite](select-stmt.gif)
+[Helpful syntax diagram for SELECT from SQLite](select-stmt.gif)
 
 Last updated 2025-07-11
