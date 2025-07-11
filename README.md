@@ -2,7 +2,7 @@
 
 This is the `README.md` file for the public GitHub repo to accompany the breakout session led by Johanna Hardin and Nicholas Horton Horton at USCOTS 2025
 
-- Nicholas J. Horton (Amherst College), Johanna S. Hardin (Pomona College)
+- Nicholas J. Horton (Amherst College) and Johanna S. Hardin (Pomona College)
 - B1B: "Leveraging data technologies to model bigger datasets"
 - Friday, July 18th, 9:45 am – 11:00 am CT
 
