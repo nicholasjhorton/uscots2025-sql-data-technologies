@@ -59,7 +59,6 @@ Prerequisites: Prior experience using RStudio. Familiarity with RMarkdown or Qua
 
 Last updated 2025-07-11
 
-<img src="select-stmt.gif" alt="drawing" width="200"/>
+<img src="select-stmt.gif" alt="drawing" width="400"/>
 
-![Helpful syntax diagram for SELECT from SQLite](select-stmt.gif)
 
