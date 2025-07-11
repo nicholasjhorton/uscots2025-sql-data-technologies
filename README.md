@@ -20,16 +20,27 @@ Prerequisites: Prior experience using RStudio. Familiarity with RMarkdown or Qua
 2. Apply these technologies to wrangle, analyze, and model large airline flight delay datasets.
 3. Explore strategies to integrate these tools into teaching introductory statistics and data science courses.
 
+## Materials on this repo:
+
+- Minilecture 1: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/mini-lecture1.pdf
+- Minilecture 2: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/mini-lecture2.pdf
+- Minilecture 3: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/mini-lecture3.pdf
+- Activity 1 (downloading a subset of the airlines data): https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/1-download.qmd
+- Activity 2 (accessing the airlines data using SQL): https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/2-explore-sql.qmd
+- Activity 3 (accessing the airlines data using dplyr): https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/3-explore-dplyr.qmd
+- Setting up a SQL server: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/sql-server-instructions.pdf
+
 
 ## Resources and useful links
 
 - more information on the airlines flight data (Data Expo 2025): https://community.amstat.org/dataexpo/home 
-- additional resources on accessing databases in R: https://beanumber.github.io/abdwr3e/12-large.html and https://mdsr-book.github.io/mdsr3e/15-sqlI.html
+- additional resources on accessing databases in R: https://beanumber.github.io/abdwr3e/12-large.html, https://mdsr-book.github.io/mdsr3e/15-sqlI.html, and https://mdsr-book.github.io/mdsr3e/16-sqlII.html
 - Jo's overview of SQL and databases: https://hardin47.netlify.app/courses/sds261-sql
 - Databases in the tidyverse: https://beanumber.github.io/tidy-databases
 - Timing of CSV vs. parquet: https://posit.co/blog/speed-up-data-analytics-with-parquet-files
 - Paul Roback course materials (top level): https://proback.github.io/264_fall_2024
 - Paul Roback course materials (exercises): https://proback.github.io/264_fall_2024/16_SQL_exercises.html
 - Public facing SQL database (auditory files): https://www.science.smith.edu/wai-database
+- SQL server setup instructions: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/sql-server-instructions.pdf, https://mdsr-book.github.io/mdsr3e/16-sqlII.html, and https://mdsr-book.github.io/mdsr3e/F-dbsetup.html
 
 Last updated 2025-07-11
