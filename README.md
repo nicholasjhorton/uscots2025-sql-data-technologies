@@ -29,8 +29,8 @@ Prerequisites: Prior experience using RStudio. Familiarity with RMarkdown or Qua
 2. Ensure that you have installed the `tidyverse` and `duckdb` packages
 3. Download the activity files repo: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/archive/refs/heads/main.zip
 4. Unzip the files
-5. Open the `1-download.qmd` file in that folder within RStudio and click `Render`: this will download data from 2023 and 2024
-6. Open the `2-explore-sql.qmd` file within RStudio and click `Render`: this will analyze the data you've downloaded. If this runs, congrats: you are accessing data using SQL on your computer.
+5. Open the `1_download_data.qmd` file in that folder within RStudio and click `Render`: this will download data from 2023 and 2024
+6. Open the `2_explore_sql.qmd` file within RStudio and click `Render`: this will analyze the data you've downloaded. If this runs, congrats: you are accessing data using SQL on your computer.
 7. Now you can start to add on your own analyses and explorations.
 
 
