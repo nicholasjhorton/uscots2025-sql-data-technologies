@@ -1,22 +1,35 @@
-# uscots2025-sql-data-technologies
-Public repo for materials for the Hardin and Horton Data Technologies breakout session at USCOTS 2025
+# USCOTS 2025 data technologies breakout
+
+This is the `README.md` file for the public GitHub repo to accompany breakout session by Johanna Hardin and Nicholas Horton Horton at USCOTS 2025
+
+- Nicholas J. Horton (Amherst College), Johanna S. Hardin (Pomona College)
+- B1B: "Leveraging data technologies to model bigger datasets"
+- Friday, July 18th, 9:45 am – 11:00 am CT
+
+## Abstract
+
+The American Statistical Association's (ASA) Data Expo 2025 made more than 210 million flights from 1987-2024 accessible for analysis. This breakout session introduces participants to essential data technologies—SQL, DuckDB, and Parquet files—through hands-on analysis of this airline delay data scaffolded using reproducible analysis tools (Quarto). Designed for educators teaching introductory and intermediate statistics and data science courses, the session demonstrates how modern tools streamline data exploration, enable efficient data handling, and facilitate modeling while fostering engaging, real-world learning experiences for students. Participants will gain practical skills to simplify and scaffold processing large datasets using SQL and DuckDB for in-memory data analysis and modeling. The session also highlights the advantages of Parquet files for efficient data storage and retrieval.
+
+Intended Audience: Educators in statistics or related fields, particularly those teaching introductory-level and intermediate-level courses, with an interest in incorporating modern data technologies into their curriculum.
+
+Prerequisites: Prior experience using RStudio. Familiarity with RMarkdown or Quarto highly desirable. Recent (2024 or later) versions of RStudio and R and installation of the `tidyverse` and `duckdb` packages.
+
+## Goals:
+
+1. Understand the fundamentals of Quarto, SQL, DuckDB, and Parquet file formats.
+2. Apply these technologies to wrangle, analyze, and model large airline flight delay datasets.
+3. Explore strategies to integrate these tools into teaching introductory statistics and data science courses.
 
 
 ## Resources and useful links
 
-See https://community.amstat.org/dataexpo/home for more information on the data.
+- more information on the airlines flight data (Data Expo 2025): https://community.amstat.org/dataexpo/home 
+- additional resources on accessing databases in R: https://beanumber.github.io/abdwr3e/12-large.html and https://mdsr-book.github.io/mdsr3e/15-sqlI.html
+- Jo's overview of SQL and databases: https://hardin47.netlify.app/courses/sds261-sql
+- Databases in the tidyverse: https://beanumber.github.io/tidy-databases
+- Timing of CSV vs. parquet: https://posit.co/blog/speed-up-data-analytics-with-parquet-files
+- Paul Roback course materials (top level): https://proback.github.io/264_fall_2024
+- Paul Roback course materials (exercises): https://proback.github.io/264_fall_2024/16_SQL_exercises.html
+- Public facing SQL database (auditory files): https://www.science.smith.edu/wai-database
 
-See https://beanumber.github.io/abdwr3e/12-large.html and https://mdsr-book.github.io/mdsr3e/15-sqlI.html for resources on databases in R.
-
-See https://hardin47.netlify.app/courses/sds261-sql/ for an accessible overview of SQL and databases.
-
-Timing of CSV vs. parquet: https://posit.co/blog/speed-up-data-analytics-with-parquet-files/
-
-
-Paul Roback materials (top level): https://proback.github.io/264_fall_2024/
-
-Paul Roback materials (exercises): https://proback.github.io/264_fall_2024/16_SQL_exercises.html
-
-Public facing SQL database (auditory files): 
-
-Last updated 2025-07-08
+Last updated 2025-07-11
