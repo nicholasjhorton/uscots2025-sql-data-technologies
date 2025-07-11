@@ -43,4 +43,6 @@ Prerequisites: Prior experience using RStudio. Familiarity with RMarkdown or Qua
 - Public facing SQL database (auditory files): https://www.science.smith.edu/wai-database
 - SQL server setup instructions: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/sql-server-instructions.pdf, https://mdsr-book.github.io/mdsr3e/16-sqlII.html, and https://mdsr-book.github.io/mdsr3e/F-dbsetup.html
 
+[Helpful guidance from SQLite](select-stmt.gif)
+
 Last updated 2025-07-11
