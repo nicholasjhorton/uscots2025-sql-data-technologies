@@ -1,0 +1,64 @@
+---
+title: "Download the airlines data"
+subtitle: "USCOTS 2025 breakout session"
+author: "Nicholas Horton (nhorton@amherst.edu) and Jo Hardin (jo.hardin@pomona.edu)"
+date: "2025-07-18"
+date-format: long
+format: pdf
+execute:
+  warning: false
+  message: false
+toc: true
+editor: source
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+library(duckdb)
+library(tictoc)
+rnd_val <- 2
+```
+
+The current Quarto file downloads the airline flight data from the American Statistical Association's Data Expo 2024.
+The data are stored in [Parquet format](https://www.databricks.com/glossary/what-is-parquet#:~:text=Apache%20Parquet%20is%20an%20open,handle%20complex%20data%20in%20bulk.), which is efficient for large datasets and can be read using SQL commands using the **arrow** package in R.
+
+Once you've successfully rendered the current Quarto file (`1_download_data.qmd`), open and render `2_explore_sql.qmd` to carry out an analysis of the downloaded data.
+(Note that both files must be saved and rendered from the same folder to access the downloaded data.)
+
+See https://community.amstat.org/dataexpo/home for background and the source for much of the code below and https://github.com/nicholasjhorton/uscots2025-sql-data-technologies for more resources.
+
+```{r}
+tictoc::tic()
+
+folder_name <- "data_airlines"
+dir.create(folder_name, showWarnings = TRUE)
+stopifnot(file.exists(folder_name))
+
+list.files(folder_name)
+base_url <- "https://blobs.duckdb.org/flight-data-partitioned/"
+
+years <- 2023:2024 # could be 1987:2024, but that's a *lot* of data!
+# please don't download too much data during the breakout session
+
+files <- paste0("Year=", years, "/data_0.parquet")
+my_files <- paste0(folder_name, "/Year=", years, "/data_0.parquet")
+
+for (dir in dirname(my_files)) {
+  dir.create(dir, showWarnings = FALSE)
+}
+
+out <- curl::multi_download(paste0(base_url, files), my_files, resume = TRUE)
+
+tictoc::toc()
+```
+
+The **tictoc** package will tell you how long it took to download the files into your local system.
+It should not take too long since you are only downloading a proper subset of what's there (to avoid overloading the network at the breakout session).
+
+```{r}
+list.files(folder_name)
+```
+
+We will be accessing the parquet files in the next Quarto file, `2_explore_sql.qmd`.
