@@ -1,8 +1,9 @@
 ---
-title: "USCOTS 2025 breakout session: Download the airlines data"
+title: "Download the airlines data"
+subtitle: "USCOTS 2025 breakout session"
 author: "Nicholas Horton (nhorton@amherst.edu) and Jo Hardin (jo.hardin@pomona.edu)"
-date: "2025-07-11"
-date-format: iso
+date: "2025-07-18"
+date-format: long
 format: pdf
 execute:
   warning: false
@@ -20,10 +21,10 @@ library(tictoc)
 rnd_val <- 2
 ```
 
-This file downloads the airline flight data from the American Statistical Association's Data Expo 2024.
+The current Quarto file downloads the airline flight data from the American Statistical Association's Data Expo 2024.
 The data are stored in [Parquet format](https://www.databricks.com/glossary/what-is-parquet#:~:text=Apache%20Parquet%20is%20an%20open,handle%20complex%20data%20in%20bulk.), which is efficient for large datasets and can be read using SQL commands using the **arrow** package in R.
 
-Once you've successfully rendered this Quarto file (`1_download_data.qmd`), open and render `2_explore-sql.qmd` to carry out an analysis of the downloaded data.
+Once you've successfully rendered the current Quarto file (`1_download_data.qmd`), open and render `2_explore_sql.qmd` to carry out an analysis of the downloaded data.
 (Note that both files must be saved and rendered from the same folder to access the downloaded data.)
 
 See https://community.amstat.org/dataexpo/home for background and the source for much of the code below and https://github.com/nicholasjhorton/uscots2025-sql-data-technologies for more resources.
@@ -60,4 +61,4 @@ It should not take too long since you are only downloading a proper subset of wh
 list.files(folder_name)
 ```
 
-We will be accessing these files in the next Quarto file, `2_explore-sql.qmd`.
+We will be accessing the parquet files in the next Quarto file, `2_explore_sql.qmd`.

@@ -1,8 +1,9 @@
 ---
-title: "USCOTS 2025 breakout session: Explore the airlines data using SQL and parquet"
+title: "Explore the airlines data from parquet files"
+subtitle: "USCOTS 2025 breakout session"
 author: "Nicholas Horton (nhorton@amherst.edu) and Jo Hardin (jo.hardin@pomona.edu)"
-date: "2025-07-11"
-date-format: iso
+date: "2025-07-18"
+date-format: long
 format: pdf
 execute:
   warning: false
@@ -23,8 +24,8 @@ rnd_val <- 2
 
 ## Introduction
 
-This file analyzes airline flight data from the [American Statistical Association's Data Expo 2024](https://community.amstat.org/dataexpo/home).
-Once the `1_download_data.qmd` Quarto file has been successfully rendered, you should be able to render this file (`2_explore_sql.qmd`) which shows off SQL syntax while analyzing the downloaded data.
+The current Quarto file analyzes airline flight data from the [American Statistical Association's Data Expo 2024](https://community.amstat.org/dataexpo/home).
+Once the `1_download_data.qmd` Quarto file has been successfully rendered, you should be able to render the current file (`2_explore_sql.qmd`) which shows off SQL syntax while analyzing the downloaded data.
 
 See https://community.amstat.org/dataexpo/home for more information on the data.
 
@@ -46,14 +47,15 @@ stopifnot(file.exists(paste0(folder_name, "/Year=2024/data_0.parquet")))
 
 ## Check reading via DuckDb
 
-We begin by creating an in-memory database using DuckDb.
-This is just a placeholder that we can reference.
+We begin by creating an in-memory database using DuckDb, which is just a placeholder that we can reference.
 
 ```{r}
 con_duckdb <- DBI::dbConnect(duckdb::duckdb())
 ```
 
-## Writing SQL code
+# Writing SQL code
+
+## SQL example 1
 
 The function `dbGetQuery()` (from the **DBI** package) allows us to run SQL code on the data which are linked to the `con_duckdb` connection. 
 Here, the `con_duckdb` connection sets up an empty sandbox (using the duckDB SQL dialect) that can point to the parquet files you downloaded previously.
@@ -107,7 +109,7 @@ ggplot(LAX_ATL_flights, aes(x = jitter(Month), y = Avg_Delay, color = Dest)) +
   ) 
 ```
 
-## Another SQL example
+## SQL example 2
 
 With the SQL connection to the parquet files, we can run any SQL statements which result in a queried dataset.
 The query below returns the top ten rows of the 2023 airlines data frame for a handful of selected columns.
@@ -116,13 +118,14 @@ The query below returns the top ten rows of the 2023 airlines data frame for a h
 #| label: limit10
 dbGetQuery(
   con_duckdb, 
-  "SELECT Tail_Number, Origin, OriginCityName, OriginState, Dest, DestCityName, DestState 
+  "SELECT Tail_Number, Origin, OriginCityName, OriginState, 
+          Dest, DestCityName, DestState 
   FROM 'data_airlines/Year=2023/data_0.parquet' LIMIT 10;"
 ) 
 ```
 
 
-## SQL in R two ways
+## SQL example 3
 
 Let's say we are interested in comparing the average delay time for the months January, February, and March by year.
 We could write SQL code to calculate the relevant averages:
@@ -154,7 +157,7 @@ Use the following chunk to write your own SQL code to answer the question: "What
 
 ## Closing the SQL connection
 
-It is always good practice to close your connection when you are through with it (this is particularly important if you are accessing a remote database).
+It is always good practice to close your connection when you are through with it (particularly important if you are accessing a remote database).
 
 ```{r}
 DBI::dbDisconnect(con_duckdb)
