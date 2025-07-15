@@ -4,7 +4,7 @@ subtitle: "USCOTS 2025 breakout session"
 author: "Nicholas Horton (nhorton@amherst.edu) and Jo Hardin (jo.hardin@pomona.edu)"
 date: "2025-07-18"
 date-format: long
-format: pdf
+format: html
 execute:
   warning: false
   message: false

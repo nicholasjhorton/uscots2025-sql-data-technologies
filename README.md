@@ -55,7 +55,7 @@ Goals:
 - Public facing SQL database (auditory files): https://www.science.smith.edu/wai-database
 - SQL server setup instructions: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies/blob/main/sql-server-instructions.pdf, https://mdsr-book.github.io/mdsr3e/16-sqlII.html, and https://mdsr-book.github.io/mdsr3e/F-dbsetup.html
 
-Last updated 2025-07-11
+Last updated 2025-07-14
 
 <img src="select-stmt.gif" alt="drawing" width="410"/>
 
