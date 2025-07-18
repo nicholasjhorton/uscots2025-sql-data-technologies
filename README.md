@@ -1,6 +1,6 @@
 # USCOTS 2025 data technologies breakout
 
-This is the `README.md` file for the public GitHub repo to accompany the breakout session led by Johanna Hardin and Nicholas Horton Horton at USCOTS 2025
+This is the `README.md` file for the public GitHub repo to accompany the breakout session led by Johanna Hardin and Nicholas Horton at USCOTS 2025
 
 LINK: https://github.com/nicholasjhorton/uscots2025-sql-data-technologies
 
